@@ -10,9 +10,7 @@ const cors = require('cors')
 dotenv.config();
 dbConnect();
 
-app.use(cors({
-    origin: 'http://localhost:5173'
-}));
+app.use(cors())
 const port = process.env.PORT;
 const hostname = process.env.HOSTNAME
 
